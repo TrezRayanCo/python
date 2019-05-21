@@ -1,5 +1,5 @@
 from soapAPI import soapapi 
-ws = soapapi("mehran67","a14267")
+ws = soapapi("usr","psw")
 
 # print("******AutoSendCode******")
 # print(ws.AutoSendCode("989112170848","شرکت ترز رایان افزار"))
