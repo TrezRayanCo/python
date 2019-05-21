@@ -57,7 +57,7 @@ print(ws.GroupMessageStatus('5522009'))
 از این متند برای مشاهده وضعیت پیام هایی که در مراحل قبل بصورت دسته ای یا نظیر به نظیر ارسال شده اند میتوان استفاده کرد.
  | توضیحات  |  نوع پارامتر | نام پارامتر  |
  | ------------ | ------------ | ------------ |
- |شناسه کاربر برای پیگیری وضعیت ارسال پیام|string[]|UserGroupID|
+ |شناسه کاربر برای پیگیری وضعیت ارسال پیام|array of  string|UserGroupID|
  
 ```python
 from restapi import restfulapi 
@@ -72,7 +72,7 @@ print(ws.CorrespondingMessageStatus(['10','20']))
  |شماره اختصاصی |string|PhoneNumber|
  |تاریخ شروع بازه زمانی دریافت پیام |long|startDate|
  |تاریخ پایان بازه زمانی دریافت پیام |long|endDate|
-  |شماره صفحه در لیست صفحه بندی شده پیام ها|int|page|
+ |شماره صفحه در لیست صفحه بندی شده پیام ها|int|page|
 ```python
 from restapi import restfulapi 
 ws = restfulapi("usr","psw")
@@ -96,7 +96,7 @@ print(ws.GetPrices())
 این متد ورودی ارسال را بررسی کرده و از آن لیست شماره هایی که در لیست سفید هستند را بر می گرداند
  | توضیحات  |  نوع پارامتر | نام پارامتر  |
  | ------------ | ------------ | ------------ |
-|لیست شماره موبایل ها برای بررسی لیست سفید  |  string[] |  PhoneNumber |
+|لیست شماره موبایل ها برای بررسی لیست سفید  |array of  string|  PhoneNumber |
 
 ```python
 from restapi import restfulapi 
