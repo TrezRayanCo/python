@@ -2,7 +2,7 @@ import random
 from restapi import restfulapi 
 phonenumber = "9830008632000111"
 groupId = random.randint(0, 99999999)
-ws = restfulapi("mehran67","a14267")
+ws = restfulapi("user","psw")
 # print("******Credit******")
 # print(ws.GetCredit())
 # print("*****Prices*******")
